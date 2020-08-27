@@ -20,6 +20,16 @@ export default new Router({
                     meta: { title: '系统首页' }
                 },
                 {
+                    path: '/ProjectManage',
+                    component: () => import(/* webpackChunkName: "icon" */ '../components/page/ProjectManage.vue'),
+                    meta: { title: '项目管理' }
+                },
+                {
+                    path: '/createProject',
+                    component: () => import(/* webpackChunkName: "icon" */ '../components/page/Icon.vue'),
+                    meta: { title: '新建项目' }
+                },
+                {
                     path: '/icon',
                     component: () => import(/* webpackChunkName: "icon" */ '../components/page/Icon.vue'),
                     meta: { title: '自定义图标' }
