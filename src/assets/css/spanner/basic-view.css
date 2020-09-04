@@ -1,5 +1,9 @@
 
 .basic-container{
-    padding: 20px;
+    padding-top: 10px;
     background-color: red;
+}
+
+.basic-container > *{
+    margin-left: 30px;
 }
