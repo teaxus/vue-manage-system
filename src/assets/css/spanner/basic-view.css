@@ -4,6 +4,6 @@
     background-color: red;
 }
 
-.basic-container > *{
+.sub-action-container{
     margin-left: 30px;
 }

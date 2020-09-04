@@ -11,9 +11,8 @@
 
 <script>
 export default {
-    name: 'BasicView',
+    name: 'Action-Views',
     mounted() {
-        console.log('basic view');
     }
 };
 </script>

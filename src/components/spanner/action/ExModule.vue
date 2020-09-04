@@ -1,11 +1,12 @@
 <template>
     <div class="basic-container">
         <div>
-            <span>Storage标签；</span>
-            <span>name={{configure.name}}；</span>
-            <span>val={{configure.val}}；</span>
+            <span>ExModule标签；</span>
+            <span>input_val:{{configure.input_val}}；</span>
+            <span>name:{{configure.name}}；</span>
+            <span>val:{{configure.val}}；</span>
         </div>
-        
+
         <div class="sub-action-container">
             <slot></slot>
         </div>
@@ -22,6 +23,7 @@ export default {
     data() {
         return {
             configure: {
+                input_val: null,
                 name: null,
                 val: null
             }
@@ -30,6 +32,7 @@ export default {
     mounted() {
         let attrs = this.$attrs;
         this.configure = {
+            input_val: attrs['input-val'],
             name: attrs['name'],
             val: attrs['val']
         };
@@ -39,3 +42,4 @@ export default {
 
 <style scoped>
 </style>
+
